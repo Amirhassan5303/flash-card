@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,5 +7,23 @@
     <script src="script.js" defer></script>
     <title>Flash card</title>
   </head>
-  <body></body>
+  <body>
+    <div class="flashcard">
+      <div class="flashcard-inner" id="card">
+        <div class="flashcard-front">
+          <p class="title">سوال</p>
+          <p class="description">آن چیست که چیستان است در دست پیران است؟</p>
+
+          <button class="btn" onclick="flipCard()">نمایش</button>
+        </div>
+
+        <div class="flashcard-back">
+          <p class="title">جواب</p>
+          <p class="description">تسبیح</p>
+
+          <button class="btn" onclick="flipCard()">پنهان</button>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
