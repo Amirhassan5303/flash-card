@@ -20,7 +20,6 @@ nextBtn.addEventListener("click", () => {
   if (currentIndex < cards.length - 1) {
     currentIndex++;
     updateSlider();
-    console.log(currentIndex);
   }
 });
 
