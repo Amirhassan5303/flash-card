@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,22 +8,76 @@
     <title>Flash card</title>
   </head>
   <body>
-    <div class="flashcard">
-      <div class="flashcard-inner" id="card">
-        <div class="flashcard-front">
-          <p class="title">سوال</p>
-          <p class="description">آن چیست که چیستان است در دست پیران است؟</p>
+    <div class="flashcards-slider">
+      <button class="arrow prev">◀</button>
+      <div class="viewport">
+        <div class="track" id="track">
+          <article class="card">
+            <div class="flashcard">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <p class="title">سوال</p>
+                  <p class="description">
+                    آن چیست که چیستان است در دست پیران است؟
+                  </p>
 
-          <button class="btn" onclick="flipCard()">نمایش</button>
-        </div>
+                  <button class="btn" onclick="flipCard(this)">نمایش</button>
+                </div>
 
-        <div class="flashcard-back">
-          <p class="title">جواب</p>
-          <p class="description">تسبیح</p>
+                <div class="flashcard-back">
+                  <p class="title">جواب</p>
+                  <p class="description">تسبیح</p>
 
-          <button class="btn" onclick="flipCard()">پنهان</button>
+                  <button class="btn" onclick="flipCard(this)">پنهان</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="flashcard">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <p class="title">سوال</p>
+                  <p class="description">
+                    آن چیست که چیستان است در دست پیران است؟
+                  </p>
+
+                  <button class="btn" onclick="flipCard(this)">نمایش</button>
+                </div>
+
+                <div class="flashcard-back">
+                  <p class="title">جواب</p>
+                  <p class="description">تسبیح</p>
+
+                  <button class="btn" onclick="flipCard(this)">پنهان</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="flashcard">
+              <div class="flashcard-inner">
+                <div class="flashcard-front">
+                  <p class="title">سوال</p>
+                  <p class="description">
+                    آن چیست که چیستان است در دست پیران است؟
+                  </p>
+
+                  <button class="btn" onclick="flipCard(this)">نمایش</button>
+                </div>
+
+                <div class="flashcard-back">
+                  <p class="title">جواب</p>
+                  <p class="description">تسبیح</p>
+
+                  <button class="btn" onclick="flipCard(this)">پنهان</button>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
+      <button class="arrow next">▶</button>
     </div>
   </body>
 </html>

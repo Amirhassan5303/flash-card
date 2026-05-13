@@ -13,6 +13,40 @@ body {
   font-family: vazirmatn;
 }
 
+.flashcards-slider {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.viewport {
+  width: 220px;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.card {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.arrow {
+  border: none;
+  background: #3b82f6;
+  color: white;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
 .flashcard {
   width: 220px;
   height: 250px;
